@@ -29,12 +29,14 @@ const Work = () => {
                   {project.Project_Title}
                 </span>
                 <div className="pt-8 text-center">
-                  {project.Demo && (<a href={project.Demo}>
+                  {project.Demo && (<a href={project.Demo} target="_blank"
+              rel="noreferrer">
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                       Demo
                     </button>
                   </a>)}
-                  {project.Code && (<a href={project.Code}>
+                  {project.Code && (<a href={project.Code} target="_blank"
+              rel="noreferrer">
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                       Code
                     </button>
